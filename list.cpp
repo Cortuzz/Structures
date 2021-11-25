@@ -195,7 +195,3 @@ private:
 	Element *firstElement;
 	Element *lastElement;
 };
-
-int main()
-{
-}
