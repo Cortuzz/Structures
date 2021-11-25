@@ -45,7 +45,7 @@ struct List
 		}
 	}
 
-	void delete(int data)
+	void deleteValue(int data)
 	{
 		Element* current = this->firstElement;
 		while (current->data == data)
@@ -161,23 +161,22 @@ struct List
 
 	int* getAllData()
 	{
-int* data = new int[listSize];
+		int* data = new int[listSize];
 		Element* current = this->firstElement;
 
-int count = 0;
+		int count = 0;
 		while (current != nullptr)
 		{
 			data[count] = current->data;
 
 			current = current->nextEl;
-count++;
+			count++;
 		}
 
-return data;
+		return data;
 	}
 
 private:
-
 	struct Element
 	{
 		Element* nextEl;
